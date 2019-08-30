@@ -3,6 +3,10 @@ include HISTORY.rst
 include LICENSE
 include README.rst
 
+include iso_language_codes/language_codes.db.dat
+include iso_language_codes/language_codes.db.bak
+include iso_language_codes/language_codes.db.dir
+
 recursive-include tests *
 recursive-exclude * __pycache__
 recursive-exclude * *.py[co]
