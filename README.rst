@@ -51,7 +51,7 @@ You can also get entire dictionary of languages:
 
 Credits
 -------
-This package uses edited iso639-autonyms database from `bbqsrc/iso639-autonyms`
+This package uses edited iso639-autonyms database from `bbqsrc/iso639-autonyms`_
 .. _`bbqsrc/iso639-autonyms`: https://github.com/bbqsrc/iso639-autonyms
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
