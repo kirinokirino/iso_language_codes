@@ -17,11 +17,6 @@ Report Bugs
 
 Report bugs at https://github.com/kirinokirino/iso_language_codes/issues.
 
-If you are reporting a bug, please include:
-
-* Your operating system name and version.
-* Any details about your local setup that might be helpful in troubleshooting.
-* Detailed steps to reproduce the bug.
 
 Fix Bugs
 ~~~~~~~~
@@ -62,7 +57,7 @@ Ready to contribute? Here's how to set up `iso_language_codes` for local develop
 1. Fork the `iso_language_codes` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/iso_language_codes.git
+    $ git clone git@github.com:kirinokirino/iso_language_codes.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
@@ -81,9 +76,8 @@ Ready to contribute? Here's how to set up `iso_language_codes` for local develop
 
     $ flake8 iso_language_codes tests
     $ python setup.py test or py.test
-    $ tox
 
-   To get flake8 and tox, just pip install them into your virtualenv.
+   To get flake8, just pip install it into your virtualenv.
 
 6. Commit your changes and push your branch to GitHub::
 
@@ -92,19 +86,6 @@ Ready to contribute? Here's how to set up `iso_language_codes` for local develop
     $ git push origin name-of-your-bugfix-or-feature
 
 7. Submit a pull request through the GitHub website.
-
-Pull Request Guidelines
------------------------
-
-Before you submit a pull request, check that it meets these guidelines:
-
-1. The pull request should include tests.
-2. If the pull request adds functionality, the docs should be updated. Put
-   your new functionality into a function with a docstring, and add the
-   feature to the list in README.rst.
-3. The pull request should work for Python 2.7, 3.4, 3.5 and 3.6, and for PyPy. Check
-   https://travis-ci.org/kirinokirino/iso_language_codes/pull_requests
-   and make sure that the tests pass for all supported Python versions.
 
 Tips
 ----
@@ -121,7 +102,7 @@ A reminder for the maintainers on how to deploy.
 Make sure all your changes are committed (including an entry in HISTORY.rst).
 Then run::
 
-$ bumpversion patch # possible: major / minor / patch
+$ bump2version patch # possible: major / minor / patch
 $ git push
 $ git push --tags
 

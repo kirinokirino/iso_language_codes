@@ -48,7 +48,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'ISO Language Codes'
-copyright = u"2019, Andrei Ruzin"
+copyright = u"2019, kirinokirino"
 author = u"Andrei Ruzin"
 
 # The version info for the project you're documenting, acts as replacement

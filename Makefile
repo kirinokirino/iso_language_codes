@@ -32,23 +32,23 @@ help:
 clean: clean-build clean-pyc clean-test ## remove all build, test, coverage and Python artifacts
 
 clean-build: ## remove build artifacts
-	rm -fr build/
-	rm -fr dist/
-	rm -fr .eggs/
+	rm -r --force build/
+	rm -r --force dist/
+	rm -r --force .eggs/
 	find . -name '*.egg-info' -exec rm -fr {} +
 	find . -name '*.egg' -exec rm -f {} +
 
 clean-pyc: ## remove Python file artifacts
-	find . -name '*.pyc' -exec rm -f {} +
-	find . -name '*.pyo' -exec rm -f {} +
-	find . -name '*~' -exec rm -f {} +
-	find . -name '__pycache__' -exec rm -fr {} +
+	find . -name '*.pyc' -exec rm --force {} +
+	find . -name '*.pyo' -exec rm --force {} +
+	find . -name '*~' -exec rm --force {} +
+	find . -name '__pycache__' -exec rm -r --force {} +
 
 clean-test: ## remove test and coverage artifacts
-	rm -fr .tox/
-	rm -f .coverage
-	rm -fr htmlcov/
-	rm -fr .pytest_cache
+	rm -r --force .tox/
+	rm --force  .coverage
+	rm -r --force htmlcov/
+	rm -r --force .pytest_cache
 
 lint: ## check style with flake8
 	flake8 iso_language_codes tests
@@ -66,8 +66,8 @@ coverage: ## check code coverage quickly with the default Python
 	$(BROWSER) htmlcov/index.html
 
 docs: ## generate Sphinx HTML documentation, including API docs
-	rm -f docs/iso_language_codes.rst
-	rm -f docs/modules.rst
+	rm --force docs/iso_language_codes.rst
+	rm --force docs/modules.rst
 	sphinx-apidoc -o docs/ iso_language_codes
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html

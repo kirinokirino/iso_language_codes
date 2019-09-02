@@ -22,3 +22,12 @@ History
 * Fixed bug with path to database
 * Metadata changes
 
+
+1.0.0 
+------------------
+
+* Changes to CONTRIBUTING.rst
+* Changes to Makefile
+* Changes to README.rst
+* Added usage examples and credited database source
+* Compiled documentation

@@ -4,12 +4,14 @@ from pathlib import Path
 
 db = str(Path(__file__).resolve().parent.joinpath('language_codes.db'))
 
+
 def language(code):
     """Get name and autonym for a given two-letter language code.
 
     :param code: two-letter ISO language code
     :type code: str
-    :return: {'Name': String with english name, 'Autonym': String with native name}
+    :return: {'Name': String with english name,
+              'Autonym': String with native name}
     :rtype: dict
     :raises KeyError: raises key exception
     :raises TypeError: raises type exception

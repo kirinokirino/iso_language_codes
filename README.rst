@@ -23,14 +23,31 @@ Get ISO code for a given language
 * Documentation: https://iso-language-codes.readthedocs.io.
 
 
-Features
+Usage
 --------
 
-* TODO
+Import this package in your script:
+> `from iso_language_codes import *`
+
+Get info about a language via Two-letter ISO code:
+> `language('ru')`
+> _{'Name': 'Russian', 'Autonym': 'Русский'}_
+
+Or get name and autonym directly with:
+> `language_name('ru')`
+> _'Russian'_
+> `language_autonym('ru')`
+> _'Русский'_
+
+You can also get entire dictionary of languages:
+> `languages = language_dictionary()`
+> `languages.keys()`
+> _dict_keys(['', 'aa', 'bn', 'ab', ...])_
 
 Credits
 -------
-
+This package uses edited iso639-autonyms database from `bbqsrc/iso639-autonyms`
+.. _`bbqsrc/iso639-autonyms`: https://github.com/bbqsrc/iso639-autonyms
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
