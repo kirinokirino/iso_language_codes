@@ -33,21 +33,21 @@ Import this package in your script:
 Get info about a language via Two-letter ISO code:
 
     >>> language('ru')
-{'Name': 'Russian', 'Autonym': 'Русский'}
+        {'Name': 'Russian', 'Autonym': 'Русский'}
 
 Or get name and autonym directly with:
 
     >>> language_name('ru')
-'Russian'
+        'Russian'
 
     >>> language_autonym('ru')
-'Русский'
+        'Русский'
 
 You can also get entire dictionary of languages:
 
-    >>>languages = language_dictionary()
-    >>>languages.keys()
-dict_keys(['', 'aa', 'bn', 'ab', ...])
+    >>> languages = language_dictionary()
+    >>> languages.keys()
+        dict_keys(['', 'aa', 'bn', 'ab', ...])
 
 Credits
 -------
