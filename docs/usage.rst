@@ -3,19 +3,33 @@ Usage
 =====
 
 Import this package in your script:
-> `from iso_language_codes import *`
+.. code:: python
+
+    from iso_language_codes import *
 
 Get info about a language via Two-letter ISO code:
-> `language('ru')`
-> _{'Name': 'Russian', 'Autonym': 'Русский'}_
+.. code:: python
+
+    language('ru')
+
+{'Name': 'Russian', 'Autonym': 'Русский'}
 
 Or get name and autonym directly with:
-> `language_name('ru')`
-> _'Russian'_
-> `language_autonym('ru')`
-> _'Русский'_
+.. code:: python
+
+    language_name('ru')
+
+'Russian'
+.. code:: python
+
+    language_autonym('ru')
+
+'Русский'
 
 You can also get entire dictionary of languages:
-> `languages = language_dictionary()`
-> `languages.keys()`
-> _dict_keys(['', 'aa', 'bn', 'ab', ...])_
+.. code:: python
+
+    languages = language_dictionary()
+    languages.keys()
+
+dict_keys(['', 'aa', 'bn', 'ab', ...])
