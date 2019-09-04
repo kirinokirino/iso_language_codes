@@ -6,7 +6,7 @@
 
 import unittest
 
-from iso_language_codes import iso_language_codes
+import iso_language_codes
 
 
 class TestIso_language_codes(unittest.TestCase):
