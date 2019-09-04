@@ -56,4 +56,4 @@ def language_dictionary():
 
 __author__ = """Andrei Ruzin"""
 __email__ = 'kirinokirino2501@gmail.com'
-__version__ = '1.0.6'
+__version__ = '1.1.0'
